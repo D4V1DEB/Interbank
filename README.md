@@ -1,8 +1,6 @@
-|-----------------------------------------------------Crear base de datos--- --------------------------------------------|
-|  En consolo primero crear la base de datos interbank y dentro de ella ejecutar el codigo en la consolo con Ctrl+Enter  |
+--Crear base de datos
 
-
-
+--En consolo primero crear la base de datos interbank y dentro de ella ejecutar el codigo en la consolo con Ctrl+Enter 
 CREATE DATABASE IF NOT EXISTS interbank;
 
 -- Seleccionar la base de datos
