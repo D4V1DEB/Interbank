@@ -1,0 +1,146 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: url('fondo.png') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.login-container {
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 20px;
+    border-radius: 2em 0; /* Aplicar en todos los navegadores */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 6);
+    width: 300px;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.form-group input[type="text"],
+.form-group input[type="password"] {
+    width: calc(100% - 30px);
+    padding: 10px;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    outline: none;
+}
+
+.form-group input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.form-group .checkbox-label {
+    display: flex;
+    align-items: center;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+.links {
+    text-align: center;
+}
+
+.links a {
+    color: #0066cc;
+    text-decoration: none;
+    margin: 0 5px;
+    font-size: 10px;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
+
+.keyboard {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 5px;
+    width: max-content;
+    margin: 0 auto;
+}
+
+.keyboard__key {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 5px; 
+    font-size: 12px; 
+    cursor: pointer;
+    border-radius: 4px;
+    text-align: center;
+    width: 30px; 
+    height: 30px; 
+    color: black;
+}
+
+.keyboard__key--wide {
+    grid-column: span 2;
+    width: 65px; 
+}
+
+.keyboard__key--extra-wide {
+    grid-column: span 4;
+    width: 140px; 
+}
+
+.keyboard__key--dark {
+    background-color: #333;
+    color: #fff;
+}
+
+.keyboard__key--activatable {
+    background-color: #fff;
+    color: black;
+}
+
+.keyboard__key--active {
+    background-color: #333;
+    color: #fff;
+}
+
+.keyboard--hidden {
+    display: none;
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.info-icon {
+    margin-left: 5px;
+    font-size: 12px;
+    color: #666;
+    cursor: pointer;
+}
+
+#logo {
+    position: absolute;
+    top: 6.4%;
+    left: 84%;
+    width: 205px;
+    height: 38px;
+}
