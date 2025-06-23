@@ -1,0 +1,306 @@
+body {
+    font-family: 'Times New Roman', serif;
+    font-size: 12pt;
+    margin: 0;
+}
+
+.navbar {
+    background-color: rgb(0, 57, 166);
+   
+    text-align: left;
+    width: 100%;
+}
+
+.nav-linkA {
+    font-family: Calibri, sans-serif;
+    font-size: 11pt;
+    color: white;
+    
+    text-decoration: none;
+    margin: 0;
+    padding: 0 10px; /* Quitar el padding superior e inferior */
+    padding-left: 20px;
+    display: inline-block; /* Asegura que los enlaces se alineen horizontalmente */
+    line-height: 20px; /* Ajusta el line-height para alinear verticalmente */
+}
+
+
+.nav-link-personas {
+    font-family: Calibri, sans-serif;
+    font-size: 11pt;
+    color: white;
+    background-color: rgb(27, 106, 209);
+    text-decoration: none;
+    margin: 0;
+    padding: 0 10px; /* Quitar el padding superior e inferior */
+    margin-left: 20%;
+    display: inline-block; /* Asegura que los enlaces se alineen horizontalmente */
+    line-height: 20px; /* Ajusta el line-height para alinear verticalmente */
+}
+
+.nav-linkA:first-child {
+    margin-left: 20px;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.logo {
+    width: 100px;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav .dropdown {
+    position: relative;
+    display: inline-block;
+    margin-right: 20px;
+    
+}
+
+.nav .dropdown .dropbtn {
+    background-color: white;
+    color: black;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.nav .dropdown:hover .dropbtn {
+    background-color: #ddd;
+}
+
+.nav .dropdown-content {
+    
+    justify-content: center; /* Centra las imágenes horizontalmente */
+    align-items: center; /* Centra las imágenes verticalmente */
+    flex-wrap: nowrap; /* Asegura que los elementos no se envuelvan en múltiples líneas */
+
+    position: absolute;
+    background-color: white;
+    padding: 10px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    width: 80vw; /* Ancho del 80% de la pantalla */
+    display: none; /* Oculta el contenido por defecto */
+}
+
+.nav .dropdown:hover .dropdown-content {
+    display: flex;  /*Muestra el contenido en modo flex cuando se pasa el ratón sobre el dropdown */
+}
+
+.dropdown-sub {
+    position: relative;
+    margin-bottom: 10px;
+    width: 23%; /* Aproximadamente una cuarta parte del ancho del contenedor */
+}
+
+
+.dropdown-img {
+    width: 100%;
+    height: auto; /* Mantiene la proporción original de la imagen */
+    max-width: 80px; /* Ajusta el tamaño máximo de las imágenes */
+    max-height: 80px; /* Ajusta el tamaño máximo de las imágenes */
+    display: block;
+}
+
+.dropdown-sub-content {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Máscara ploma traslúcida */
+    padding: 10px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    min-width: 160px; /* Ajusta el ancho del sub-dropdown */
+}
+
+.dropdown-sub:hover .dropdown-sub-content {
+    display: block;
+}
+
+.dropdown-sub-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-sub-content a:hover {
+    background-color: #ddd;
+}
+
+.nav .nav-link {
+    margin-left: 20px;
+    text-decoration: none;
+    color: white;
+    background-color:rgb(5, 190, 80);
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 5%;
+}
+.nav .nav-link2 {
+    margin-left: 20px;
+    text-decoration: none;
+    color: white;
+    background-color:rgb(0, 57, 166);
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 5%;
+}
+
+.nav .nav-link:hover {
+    background-color: rgb(64, 199, 118);
+}
+.nav .nav-link2:hover {
+    background-color: rgb(39, 84, 167);
+}
+
+.promociones {
+    display: flex;
+    /*align-items: center;*/
+    /*justify-content: center; */
+    padding: 20px;
+    background-color: rgb(5, 190, 80);
+    border-bottom-right-radius: 30px;
+    /*display: inline-block;*/ /* Asegura que los enlaces se alineen horizontalmente */ 
+    position: relative;
+}
+
+.foto {
+    width: 300px;
+    position: relative;
+    left: 460px; /* Slightly move the image to the right */
+}
+.fotoPromo {
+    width: 400px;
+    height: 300px;
+    position: relative;
+    left: 50px; /* Slightly move the image to the right */
+}
+
+.bancaInternet {
+    text-align: center;
+    padding: 20px;
+}
+
+.pbi1, .pbi2 {
+    text-align: center;
+    margin: 10px 0;
+}
+
+.nav2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-top: 20px;
+}
+
+.nav-link-personas2 {
+    display: inline-block;
+    text-decoration: none;
+}
+
+.BI {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.BI:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.logoBI {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 10px;
+}
+
+.nav3 {
+    background-color: rgb(0, 57, 166);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 200px 150px 100px 150px;
+}
+
+.nav3C {
+    /*display: inline-flex;*/
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px 0 0 10px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.nav3C:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.nav-link-solution {
+    /*display: inline-flex;*/
+    text-decoration: none;
+}
+
+.solution {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px 0 0 10px;
+}
+
+/*Navegador 4*/
+.nav4 {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 200px 80px 100px 80px;
+}
+
+.nav4C {
+    /*display: inline-flex;*/
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px 0 0 10px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.nav4C:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.nav-link-information {
+    /*display: inline-flex;*/
+    text-decoration: none;
+}
+
+.information {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px 0 0 10px;
+}

@@ -2,16 +2,14 @@
 <%@page import="java.sql.*"%>
 
 <%
-    // Obtener parámetros del formulario de inicio de sesión
     String cardNumber = request.getParameter("card-number").replaceAll("\\s", "");
     String dni = request.getParameter("document-type");
     String claveWeb = request.getParameter("campo_clave");
 
-    // Configuración de la base de datos
-    String host = "localhost"; // Cambia según tu configuración
-    String usua = "root";      // Cambia según tu configuración
-    String pass = "123456";    // Cambia según tu configuración
-    String bd = "interbank";   // Cambia según tu configuración
+    String host = "localhost"; 
+    String usua = "root";     
+    String pass = "123456";    
+    String bd = "interbank";  
 
     Connection conexion = null;
     PreparedStatement ps = null;
